@@ -1,16 +1,28 @@
-#5.1. Can you explain the copy (cp ../temp-* .) command used above?
+# mcdaafa - Fundamentos da Ciência de Dados Agro-Ambientais
+
+## The answers to questions of Exercice_2:
+
+###5.1. Can you explain the copy (cp ../temp-* .) command used above?
 The command cp ../temp-* . copies all files starting with "temp-" from the directory one level above (../) to the current directory (.).
- It uses the wildcard * to match any characters following "temp-".
+It uses the wildcard * to match any characters following "temp-".
 
+---
 
-#5.2. Can you explain why, in this case, we did not have to do git init?
+###5.2. Can you explain why, in this case, we did not have to do git init?
+
 We didn't need to run git init because the repository was cloned from an existing Git repository. 
 The git clone command automatically initializes a repository with its version history and configuration.
 
+---
 
-#5.3. Can you commit the files copied? What do you need to do? Execute the commands that are needed.
-Yes, to commit the copied files you need to follow some steps:
-    1.Add the files to the staging area, using the folowwing command: git add temp-data.csv temp-average.py temp-doc.txt
+###5.3. Can you commit the files copied? What do you need to do? Execute the commands that are needed.
+
+Yes, to commit the copied files we need to follow some steps on the Git Bash terminal:
+
+    1.Add the files to the staging area, using the folowwing command: 
+       → git add temp-data.csv temp-average.py temp-doc.txt
     
-    2.Commit the changes with a message, using the folowwing command: git commit -m " Added temperature analysis files"
+    2.Commit the changes with a message, using the folowwing command: 
+       → git commit -m " Added temperature analysis files"
 
+After executing these commands, the files will be committed to the local repository and ready to be pushed to the remote repository, if needed, using git push.
